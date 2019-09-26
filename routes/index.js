@@ -12,7 +12,7 @@ app.get('/', function (req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-app.get('/product/upload-products', function (req, res, next) {
+app.post('/product/upload-products', function (req, res, next) {
 
   productModel.bulkCreate(req.body).then(function (products) {
     res.json(products)

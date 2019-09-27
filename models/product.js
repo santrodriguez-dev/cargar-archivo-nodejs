@@ -16,7 +16,7 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       validate: { notEmpty: true }
     },
-    campaign_id: {
+    campaignId: {
       type: DataTypes.NUMBER,
       validate: { notEmpty: true }
     }
